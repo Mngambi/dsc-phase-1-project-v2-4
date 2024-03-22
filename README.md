@@ -1,29 +1,18 @@
-# Phase 1 Project Description
+# Project Description
 
-You've made it all the way through the first phase of this course - take a minute to celebrate your awesomeness!
 
-![awesome](https://raw.githubusercontent.com/learn-co-curriculum/dsc-phase-1-project-v2-4/master/awesome.gif)
-
-Now you will put your new skills to use with a large end-of-Phase project!
-
-In this project description, we will cover:
-
-* [***Project Overview:***](#project-overview) the project goal, audience, and dataset
-* [***Deliverables:***](#deliverables) the specific items you are required to produce for this project
-* [***Grading:***](#grading) how your project will be scored
-* [***Getting Started:***](#getting-started) guidance for how to begin your first project
 
 ## Project Overview
 
-For this project, you will use exploratory data analysis to generate insights for a business stakeholder.
+This document serves as a guide to the analysis performed on movie data sourced from various sources, focusing on key business questions related to language prevalence, budget's impact on revenue, the relationship between average vote and popularity, and the influence of movie language on its popularity.
 
-### Business Problem
+### Business Understanding
 
-Microsoft sees all the big companies creating original video content and they want to get in on the fun. They have decided to create a new movie studio, but they don’t know anything about creating movies. You are charged with exploring what types of films are currently doing the best at the box office. You must then translate those findings into actionable insights that the head of Microsoft's new movie studio can use to help decide what type of films to create.
+The purpose of this analysis is to answer questions that can help Microsoft in the entertainment industry make informed choices. We are looking into things like which languages are most commonly used in movies, whether spending more money on a movie leads to higher profits, if people's votes for movies reflect the actual popilarity of the movie, and whether the language a movie is in affects how popular it becomes. By understanding these factors, we can figure out how to make better movies and market them more effectively
 
-### The Data
+### Data Analysis and understanding
 
-In the folder `zippedData` are movie datasets from:
+The data used and analysed has been sourced from various reputable websites such as:
 
 * [Box Office Mojo](https://www.boxofficemojo.com/)
 * [IMDB](https://www.imdb.com/)
@@ -31,23 +20,22 @@ In the folder `zippedData` are movie datasets from:
 * [TheMovieDB](https://www.themoviedb.org/)
 * [The Numbers](https://www.the-numbers.com/)
 
-Because it was collected from various locations, the different files have different formats. Some are compressed CSV (comma-separated values) or TSV (tab-separated values) files that can be opened using spreadsheet software or `pd.read_csv`, while the data from IMDB is located in a SQLite database.
 
-![movie data erd](https://raw.githubusercontent.com/learn-co-curriculum/dsc-phase-1-project-v2-4/master/movie_data_erd.jpeg)
+### Description of Data
+The datasets used contain information on thousands of movies, including details such as release year, language, budget, revenue, average vote, and popularity. We approached the analysis of the data using the following questions:
 
-Note that the above diagram shows ONLY the IMDB data. You will need to look carefully at the features to figure out how the IMDB data relates to the other provided data files.
+* What is the most common language that movies are watched in?
+* Does language Affect Popularity?
+* Does average vote affect Popularity?
+* Does budget affect revenue?
 
-It is up to you to decide what data from this to use and how to use it. If you want to make this more challenging, you can scrape websites or make API calls to get additional data. If you are feeling overwhelmed or behind, we recommend you use only the following data files:
 
-* `im.db.zip`
-  * Zipped SQLite database (you will need to unzip then query using SQLite)
-  * `movie_basics` and `movie_ratings` tables are most relevant
-* `bom.movie_gross.csv.gz`
-  * Compressed CSV file (you can open without expanding the file using `pd.read_csv`)
+Using these questions, the datasets were cleaned and merged to facilitate the analysis process.
+After analysis, there were several observations in regards to our iniital questions
 
-### Key Points
 
-* **Your analysis should yield three concrete business recommendations.** The ultimate purpose of exploratory analysis is not just to learn about the data, but to help an organization perform better. Explicitly relate your findings to business needs by recommending actions that you think the business (Microsoft) should take.
+**The most common language.**
+
 
 * **Communicating about your work well is extremely important.** Your ability to provide value to an organization - or to land a job there - is directly reliant on your ability to communicate with them about what you have done and why it is valuable. Create a storyline your audience (the head of Microsoft's new movie studio) can follow by walking them through the steps of your process, highlighting the most important points and skipping over the rest.
 

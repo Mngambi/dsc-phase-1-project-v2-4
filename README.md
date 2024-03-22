@@ -36,6 +36,9 @@ After analysis, there were several observations in regards to our iniital questi
 
 **The most common language.**
 
+![Most common language](Language.png)
+This shows the most common langiage that most movies are available in.
+
 
 * **Communicating about your work well is extremely important.** Your ability to provide value to an organization - or to land a job there - is directly reliant on your ability to communicate with them about what you have done and why it is valuable. Create a storyline your audience (the head of Microsoft's new movie studio) can follow by walking them through the steps of your process, highlighting the most important points and skipping over the rest.
 
